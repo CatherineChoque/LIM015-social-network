@@ -91,7 +91,7 @@ export const showFsPost = () => {
       posts.appendChild(theDiv);
     });
   };
-  // TERMINA setupPost(post)
+  // Termina setupPost(post)
 
   fs.collection('publicaciones').onSnapshot((snapshot) => {
     const post = [];

@@ -118,12 +118,10 @@ export const dataPost = () => {
         const postLikes = doc.likes;
         postLikes.push(userLogged.uid);
         postLike(postId, postLikes);
-        // fs.collection('publicaciones').doc(postId).update({ likes: postLikes });
       } else {
         const postLikes = doc.likes;
         postLikes.splice(result, 1);
         postLike(postId, postLikes);
-        // fs.collection('publicaciones').doc(postId).update({ likes: postLikes });
       }
     });
     likesCounter.appendChild(theDiv);
